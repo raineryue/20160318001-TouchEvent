@@ -10,13 +10,16 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self.imageView addSubview:[UIButton buttonWithType:UIButtonTypeContactAdd]];
 }
 
 - (void)didReceiveMemoryWarning {
